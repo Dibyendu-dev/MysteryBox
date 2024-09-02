@@ -1,7 +1,7 @@
 import dbConnect from "@/lib/dbConnect";
 import UserModel from "@/model/User";
 import bcrypt from "bcryptjs"
-import { sendverificationEmail } from "@/helpers/sendVerificationEmail";
+import { sendVerificationEmail } from "@/helpers/sendVerificationEmail";
 
 export async function POST(request:Request) {   
     await dbConnect()
@@ -28,7 +28,7 @@ export async function POST(request:Request) {
         let verifyCode = Math.floor(100000 + Math.random() * 900000).toString();
     
         if (existingUserByEmail) {
-          if (existingUserByEmail.isVarified) {
+          if (existingUserByEmail.isVerified) {
             return Response.json(
               {
                 success: false,
