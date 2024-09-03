@@ -11,8 +11,8 @@ export async function sendVerificationEmail(
         host: 'smtp.ethereal.email',
         port: 587,
         auth: {
-            user: 'earnest.farrell@ethereal.email',
-            pass: 'DSwzQUJ4XY9ZW4qaKN'
+         user: 'gus.fadel@ethereal.email',
+        pass: 'PTKMMB8At5NKPDYdCk'
         }
     });
 
