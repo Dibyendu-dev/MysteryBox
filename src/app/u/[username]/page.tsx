@@ -2,7 +2,10 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div>message page</div>
+    <div>
+      <h1>user profile</h1>
+    
+    </div>
   )
 }
 
